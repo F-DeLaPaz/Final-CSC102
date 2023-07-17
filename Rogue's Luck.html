@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Rogue's Luck</title> <!-- Page title -->
+  <link rel="stylesheet" type="text/css" href="rogue.css"> <!-- Link to CSS file -->
+  <script src="Rouge.js"></script> <!-- Link to JavaScript file -->
+</head>
+<body>
+  <header>
+    <img src="images/roguesluck.png" alt="Rogue's Luck" width="800" height="200"> <!-- Display game banner image -->
+    <hr class="horizontal-line"> <!-- Horizontal line separator -->
+  </header>
+  <nav>
+    <h2>Navigation</h2>
+    <a href="./index.html">Home</a><br>
+    <a href="./boards.html">Boards</a><br>
+    <a href="./Palindrone.html">Palindrone</a><br>
+    <a href="./Rogue's Luck.html"> Rogue's Luck</a><br>
+    <a href="./ChaCha.html"> Cha Cha Baby</a><br>
+    <a href="./secret.html">Secret Message</a><br>
+    <a href="./index.html">Back</a>
+    
+  </nav>
+  <br><br>
+  <h1>Fortuna, Tychee, Haminja, Lady Luck... Do Any of them Watch Over You</h1> <!-- Display heading text -->
+  <br><br>
+  <div id="diceContainer"> <!-- Dice container -->
+    <div class="dice">
+      <img id="diceImage1" src="images/Skull1.png" alt="Dice Image"> <!-- Display first dice image -->
+    </div>
+    <div class="dice">
+      <img id="diceImage2" src="images/Skull1.png" alt="Dice Image"> <!-- Display second dice image -->
+    </div>
+    <div class="dice">
+      <img id="diceImage3" src="images/Skull1.png" alt="Dice Image"> <!-- Display third dice image -->
+    </div>
+  </div>
+  <br><br>
+  <div id="buttonContainer"> <!-- Button container -->
+    <button id="rollButton" onclick="rollDie()">Roll Dice</button> <!-- Roll dice button -->
+    <button id="stopButton" onclick="stopRoll()" disabled>Stop</button> <!-- Stop button (disabled) -->
+  </div>
+  <br><br>
+  <div id="buttonContainer"> <!-- Button container -->
+    <button id="rerollButton" onclick="multiFunction()">Reroll dice</button> <!-- Reroll dice button -->
+  </div>
+</body>
+</html>

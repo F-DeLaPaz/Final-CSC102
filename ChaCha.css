@@ -1,0 +1,179 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, white 10%, steelblue 90%);
+  background-position: bottom;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+}
+
+.stop-button-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#slideRightButton,
+#slideLeftButton {
+  font-size: 18px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border: solid black;
+  cursor: pointer;
+  width: 100%;
+}
+
+.stop-button-container .stop-button {
+  background: none;
+  border: none;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.stop-button-container .stop-button img {
+  width: 60px;
+  height: 60px;
+}
+
+.right-moving-gif {
+  position: absolute;
+  left: -200px;
+  max-width: 100%;
+  height: auto;
+}
+
+.left-moving-gif {
+  position: absolute;
+  right: -200px;
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+
+#slideRightButton.on,
+#slideLeftButton.on,
+.stop-button.on {
+  box-shadow: 0 0 20px 10px rgba(76, 175, 80, 0.5); /* Green glow effect for "on" state */
+}
+
+#slideRightButton.off,
+#slideLeftButton.off,
+.stop-button.off {
+  box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.5); /* Red glow effect for "off" state */
+}
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 250px;
+  left: 0;
+  width: 100%;
+}
+
+.audio-controls {
+  width: 100%;
+  border: solid 2px black;
+  border-radius: 35px;
+  background-color: purple;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: green;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.audio-controls audio {
+  width: 100%;
+}
+
+.audio-controls .download-button {
+  background-color: purple;
+  border: solid 2px black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 35px;
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.chacha-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 350px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.button {
+  width: 160px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border: solid 1.5px black;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 5px 10px;
+}
+
+.playActive {
+  background-color: green;
+  color: white;
+  border: solid 1.5px black;
+  box-shadow: 0 0 20px 10px rgba(0, 128, 0, 0.5);
+}
+
+.playInactive {
+  background-color: red;
+  color: white;
+  border: solid 1.5px black;
+  box-shadow: rgba(255, 0, 0, 0.5);
+}
+
+.stopActive {
+  background-color: green;
+  color: white;
+  border: solid 1.5px black;
+  box-shadow: 0 0 20px 10px rgba(0, 128, 0.5);
+}
+
+.stopInactive {
+  background-color: red;
+  color: white;
+  border: solid 1.5px black;
+  box-shadow: rgba(255, 0, 0, 0.5);
+}

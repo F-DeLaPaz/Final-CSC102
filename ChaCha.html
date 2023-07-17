@@ -1,0 +1,56 @@
+<!-- Francisco De La Paz -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=800, initial-scale=1.0">
+  <title>Cha Cha Baby</title>
+  <link rel="stylesheet" type="text/css" href="ChaCha.css">
+</head>
+<body>
+  <nav>
+    <h2>Navigation</h2>
+    a href="./index.html">Home</a><br>
+    <a href="./boards.html">Boards</a><br>
+    <a href="./Palindrone.html">Palindrone</a><br>
+    <a href="./Rogue's Luck.html"> Rogue's Luck</a><br>
+    <a href="./ChaCha.html"> Cha Cha Baby</a><br>
+    <a href="./secret.html">Secret Message</a><br>
+    <a href="./index.html">Back</a>
+    
+  </nav>
+  <div class="image-container"> <!--Using this container for the pics i plan to move also so i can format-->
+    <img class="right-moving-gif" src="rightBaby.gif" id="rightBaby">
+  </div>
+  <div class="image-container">
+    <img class="left-moving-gif" src="leftBaby.gif" id="leftBaby">
+  </div>
+  <div class="button-container"> <!--Using this container for the direction buttons for movement-->
+    <div class="slide-right-button-container"> <!--I'm using this container so i can control spacing betwwen buttons-->
+      <button id="slideRightButton" onclick="slideToRight()">Start slide to the &rarr;</button> <!--Calling an audio snip witht he onclick-->
+    </div>
+    <div class="stop-button-container" id="stopButtonContainer"> <!--for spacing-->
+      <button class="stop-button" onclick="stopSlide();">
+        <img src="stop.png" alt="Stop" width="60" height="60"> <!-- Didnt waht to use a regular button so i used a picture-->
+      </button>
+    </div>
+    <div class="slide-left-button-container"> <!-- Same as above-->
+      <button id="slideLeftButton" onclick="slideToLeft()">Start slide to the &larr;</button>
+    </div>
+  </div>
+  <div class="chacha-container"> <!--These buttons will play whole song via trigger a function-->
+    <button id="playButton" class="button" onclick="yesChaCha();">Yes to the Cha Cha</button>
+    <button id="stopButton" class="button" onclick="noChaCha();" disabled>No to the Cha Cha</button>
+  </div>
+  <div class="audio-container"> <!--This is so i can style and format audio controls-->
+    <div class="audio-controls">
+      <audio id="audioPlayer" controls> <!--This is a web absed audio player it only has play and pause, i was building a stop, but decided to give a downlaod button instead-->
+        <source src="chacha.mp3" type="audio/mpeg">
+      </audio>
+      <a href="chacha.mp3" download class="download-button">Download</a> <!-- The download button-->
+    </div>
+  </div>
+  <script src="ChaCha.js"></script>
+</body>
+</html>

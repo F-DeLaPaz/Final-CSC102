@@ -1,0 +1,100 @@
+body {
+    font-family: cursive;
+    text-align: center;
+    background-color: rgba(255, 196, 0, 0.904);
+    font-style: oblique;
+  }
+  
+  .header {
+    color: red;
+    font-size: 25px;
+    border-bottom: 1px solid #ab0707;
+    padding-bottom: 10px;
+  }
+
+  .disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .disclaimer-text {
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  .skull-symbol {
+    color: black;
+    font-size: 3em;
+  }
+  
+  h1 {
+    color: #333;
+    font-style: normal;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  
+  #message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .positive {
+    color: green;
+  }
+  
+  .negative {
+    color: red;
+  }
+  
+  .footnote {
+    margin-top: 1em;
+    border-top: 1px solid red;
+    padding-top: 1em;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .skull-symbol1 {
+    font-size: 3rem;
+    color: red;
+    margin-right: 8px; 
+  }
+  .footnote p {
+    margin: 0;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .footnote-text {
+    color: black;
+    font-size: 1rem;
+  }
+  nav  {
+    text-align: left;
+  }
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+

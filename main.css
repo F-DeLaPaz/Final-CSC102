@@ -1,0 +1,36 @@
+p {
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: Center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tr:hover {
+    background-color: #e6e6e6;
+  }
+footer img {
+
+width: 135px;
+height: 150px;
+}
